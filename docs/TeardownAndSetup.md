@@ -6,10 +6,10 @@
 
 如果你有很多用例需要做重复的事情，那你可以用`beforeEach`和`afterEach`
 ```
-var initialName;
+var initialName = '';
 
 beforeEach(() => {
-    initialName = '徐博';
+    initialName = '代码';
 });
 
 afterEach(() => {
@@ -17,13 +17,13 @@ afterEach(() => {
 });
 
 test('city database has Vienna', () => {
-    initialName = initialName + '好菜';
-    expect(initialName).toBe('徐博好菜');
+    initialName = initialName + '有点烂';
+    expect(initialName).toBe('代码有点烂');
 });
 
 test('city database has San Juan', () => {
-    initialName = initialName + '真心菜';
-    expect(initialName).toBe('徐博真心菜');
+    initialName = initialName + '真心烂';
+    expect(initialName).toBe('代码真心烂');
 });
 ```
 `beforeEach` 和 `afterEach` 可以像`[TestAsyncCode](./TestAsyncCode.md)`一样操作异步代码。不过同时它也需要与`TestAsyncCode`一样注意使用promise的时候要return。

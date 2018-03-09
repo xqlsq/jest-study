@@ -51,3 +51,12 @@ exports.default = {
   watchman: true
 };
 ```
+
+## globalSetup [string]
+
+此选项允许自定义设置全局模块，该模块`exports`异步函数，在所有的测试集开始前触发一次。
+
+## globalTeardown [string]
+
+此选项允许自定义拆除全局模块，该模块`exports`异步函数，在所有的测试集完成后触发一次。
+

@@ -21,3 +21,5 @@
 * [Jest CLI 选项](./docs/API/JestCLIOptions.md)
 
 * [遇到的问题和踩过的坑](./docs/Pits.md)
+
+* [辅助工具：Enzyme](./docs/Enzyme.md)
