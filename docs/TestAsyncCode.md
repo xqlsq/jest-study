@@ -35,7 +35,7 @@ test('the data is peanut butter', done => {
 如果 `done()` 没有被调用，测试就会失败，这也是你所希望发生的。
 
 ## Promises
-如果您的代码使用 Promises，还有一个更简单的方法来处理异步测试。 只需要从您的测试返回一个 Promise, Jest 会等待这一承诺解析完成。 如果承诺被拒绝，则测试将自动失败。
+如果您的代码使用 Promises，还有一个更简单的方法来处理异步测试。 只需要从您的测试返回一个 Promise, Jest 会等待这一Promise解析完成。 如果Promise被拒绝，则测试将自动失败。
 
 比如，那段 fetchData 的代码，不要使用回调函数，而是返回一个 Promise，应该会解析出一个 'peanut butter' 的字符串。我们可以用下面的代码来测试它：
 
